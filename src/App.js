@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './App.css';
 import img from '../src/img.jpg'
 import mainImg from '../src/mainImg.jpg'
 
@@ -14,11 +13,11 @@ function App() {
         </MainText>
       <InfoBox>
         <Info>
-          <div>윤상, 심혜진의 아들</div>
+          <div>ooo, ooo의 아들</div>
           <div>현우</div>
         </Info>
         <Info>
-          <div>윤상, 심혜진의 아들</div>
+          <div>ooo, ooo의 딸</div>
           <div>서진주</div>
         </Info>
       </InfoBox>
