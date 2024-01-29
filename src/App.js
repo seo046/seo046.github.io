@@ -14,7 +14,7 @@ function App() {
       <InfoBox>
         <Info>
           <div>ooo, ooo의 아들</div>
-          <div>현우</div>
+          <div>현우 </div>
         </Info>
         <Info>
           <div>ooo, ooo의 딸</div>
@@ -33,6 +33,7 @@ function App() {
           <div>대구광역시 동대구로 194-7 아현정 (황금동 660)</div>
         </p>
         <p>
+          <div>주차 안내</div>
           <div>주차 안내</div>
         </p>
       </MapData>
