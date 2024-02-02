@@ -7,7 +7,8 @@ import mapImg from './map.png'
 import icon from '../src/Img/icon/free-icon-send-3945563.png'
 import secImg from './mainImg.jpg'
 import mainImg from './mg.jpg'
-import Modal from './modal.jsx';
+import Modal from './Modal_jinju.jsx';
+import ModalMale from './ModalH.jsx'
 
 function App() {
 const [male, setMale] = useState(false);
@@ -68,10 +69,11 @@ const settings = {
       <div>마음 전해주실 곳 </div>
       <Num>
       <span onClick={onClcikMale}> <img src={icon}/> 신랑측 </span>
-      {male ? <Modal/>:null}
+
       <span onClick={onClcikFemale}> <img src={icon}/> 신부측 </span>
-      {male ? <Modal/>:null}
       </Num>
+      {male ? <ModalMale setMale={setMale} male={male} />:null}
+      {female ? <Modal setFemale={setFemale} female={female} />:null}
       </Bottom>
       {/* <Slider {...settings}>
         <InnerText>
@@ -90,7 +92,6 @@ const settings = {
 }
 
 const Box = styled.div`
-position: absolute;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -100,6 +101,9 @@ width: 100%;
 height: 100%;
 font-family: "Nanum Myeongjo", serif;
 color: #311D00;
+.ModalBox{
+
+}
 `
 const Top = styled.div`
 font-family: "Nanum Myeongjo", serif;
@@ -168,6 +172,14 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 margin-bottom: 25px;
+span{
+  display: flex;
+  align-items: center;
+  img{
+  width: 13px;
+  height: 12px;
+  margin-right:10px;
+}}
 `
 
 const InnerText = styled.div`
