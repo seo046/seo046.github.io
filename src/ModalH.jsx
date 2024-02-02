@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import icon from './Img/icon/free-icon-copy-content-60990.png';
-import call from './Img/icon/free-icon-phone-94915.png';
 
 
 const handleCopyClipBoard = async (text) => {
@@ -20,25 +19,22 @@ const ModalH = ( male ) => {
       {male ? (
         <Data> 
             <Info>
-              <p>본인</p>
+              <p></p>
               <p>신한 110-257-975501</p>
               <p>이현우</p>
               <p onClick={()=>handleCopyClipBoard('신한 110-257-975501 이현우')}><img src={icon}/> </p>
-              <p><img src={call}/> </p>
             </Info>
             <Info>
-              <p>부</p>
+              <p>父</p>
               <p>하나 513-910008-36508</p>
               <p>이용섭</p>
               <p onClick={()=>handleCopyClipBoard('하나 513-910008-36508 이용섭')}><img src={icon}/> </p>
-              <p onclick="document.location.href='01039010522'"><img src={call}/> </p>
             </Info>
             <Info>
-              <p>모</p>
+              <p>母</p>
               <p>대구 249-13-116837</p>
               <p>이복성</p>
               <p onClick={()=>handleCopyClipBoard('대구 249-13-116837 이복성')}><img src={icon}/> </p>
-              <p onclick="document.location.href='tel:010-3901-0522'"><img src={call}/> </p>
             </Info>
         </Data>): null}
       </ModalBox>

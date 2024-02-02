@@ -28,25 +28,22 @@ const onClcik = () => {
       {female ? (
         <Data> 
             <Info>
-              <p>본인</p>
+              <p></p>
               <p>신한 110-463-549357</p>
               <p>서진주</p>
               <p onClick={()=>handleCopyClipBoard('신한 110-463-549357 서진주')}><img src={icon}/> </p>
-              <p><img src={call}/> </p>
             </Info>
             <Info>
-              <p>부</p>
+              <p>父</p>
               <p>농협 823-12-139643</p>
               <p>서병환</p>
               <p onClick={()=>handleCopyClipBoard('농협 823-12-139643 서병환')}><img src={icon}/> </p>
-              <p onclick="document.location.href='01039010522'"><img src={call}/> </p>
             </Info>
             <Info>
-              <p>모</p>
+              <p>母</p>
               <p>농협 302-0480-5680-01</p>
               <p>정미영</p>
               <p onClick={()=>handleCopyClipBoard('농협 302-0480-5680-01 정미영')}><img src={icon}/> </p>
-              <p onclick="document.location.href='tel:010-3901-0522'"><img src={call}/> </p>
             </Info>
         </Data>): null}
       </ModalBox>

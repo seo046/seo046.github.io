@@ -9,6 +9,12 @@ import secImg from './mainImg.jpg'
 import mainImg from './mg.jpg'
 import Modal from './Modal_jinju.jsx';
 import ModalMale from './ModalH.jsx'
+import main from './Img/mainIMg.webp';
+import sec from './Img/secImg.webp';
+import img1 from './Img/01.webp';
+import img2 from './Img/02.webp';
+import img3 from './Img/03.webp';
+import gif from './Img/gif.GIF';
 
 function App() {
 const [male, setMale] = useState(false);
@@ -34,8 +40,9 @@ const settings = {
   arrows: false,
 };
 
+
   return (
-    <Box>
+    <Box className='App'>
       <Top>
         <MainImg src={mainImg}/>
         <MainText>현우 진주 우리 결혼합니다.</MainText>
@@ -69,24 +76,25 @@ const settings = {
       <div>마음 전해주실 곳 </div>
       <Num>
       <span onClick={onClcikMale}> <img src={icon}/> 신랑측 </span>
-
       <span onClick={onClcikFemale}> <img src={icon}/> 신부측 </span>
       </Num>
       {male ? <ModalMale setMale={setMale} male={male} />:null}
       {female ? <Modal setFemale={setFemale} female={female} />:null}
       </Bottom>
-      {/* <Slider {...settings}>
-        <InnerText>
-          <img src={mainImg}/>
-        </InnerText>
-        <InnerText>
-        <img src={mapImg}/>
-        </InnerText>
-        <InnerText>
-        <img src={img}/>
-        </InnerText>
-      </Slider> */}
-      <Img  src={secImg}/>
+      <ImgSlider>
+      <Slider {...settings}>
+        <div>
+        <img src={secImg}/>
+        </div>
+        <div>
+        <img src={img1}/>
+        </div>
+        <div>
+        <img src={img2}/>
+        </div>
+      </Slider>
+      </ImgSlider>
+      <Img  src={gif}/>
     </Box>
   );
 }
@@ -99,11 +107,8 @@ justify-content: center;
 text-align: center;
 width: 100%;
 height: 100%;
-font-family: "Nanum Myeongjo", serif;
+font-family: "Nanum Myeongjo";
 color: #311D00;
-.ModalBox{
-
-}
 `
 const Top = styled.div`
 font-family: "Nanum Myeongjo", serif;
@@ -117,8 +122,9 @@ const MainImg = styled.img `
 
 `
 const Img = styled.img`
-  width: 70%;
+  width: 80%;
   height: 70%;
+  margin-top: 50px;
   margin-bottom: 50px;
 `
 
@@ -171,6 +177,7 @@ const Num = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-around;
+margin-top: 15px;
 margin-bottom: 25px;
 span{
   display: flex;
@@ -182,16 +189,54 @@ span{
 }}
 `
 
-const InnerText = styled.div`
-width: 100px;
-height: 100px;
-border: 1px solid beige;
-display: flex;
-img{
-  width: 100px;
-  height: 50px;
+const ImgSlider = styled.div`
+width: 100%;
+height: 300px;
+  .slick-slider {
+    touch-action: pinch-zoom;
+  }
+  .slick-slide img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
-`
+
+  .SlickArrow {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+  }
+  .NextArrow {
+    right: -40px;
+    top: 50%;
+    transform: rotate(-180deg) translate(0%, 50%);
+  }
+  .PrevArrow {
+    left: -60px;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+
+  .slick-dots {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    li {
+      float: none;
+      display: inline-block;
+      height: 10px;
+      + li button {
+        margin-left: 10px;
+      }
+
+      &.slick-active {
+        button {
+        }
+      }
+    }
+  }
+`;
 
 
 export default App;
