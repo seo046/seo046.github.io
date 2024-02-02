@@ -1,11 +1,9 @@
 import styled from 'styled-components';
-import img from '../public/img/img.jpg';
-import mainImg from '../public/img/mainImg.jpg';
-import mapImg from '../public/img/map.png';
 import { useState } from 'react';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import mapImg from '../src/map.png'
 
 function App() {
 const [male, setMale] = useState(false);
@@ -34,7 +32,7 @@ const settings = {
   return (
     <Box>
       <Top>
-        <MainImg src={img}/>
+        <MainImg/>
         <MainText>현우 진주 우리 결혼합니다.</MainText>
         <InfoBox>
           <Info>
@@ -98,7 +96,7 @@ const settings = {
         <img src={img}/>
         </InnerText>
       </Slider> */}
-      <Img src={mainImg}/>
+      <Img />
     </Box>
   );
 }
