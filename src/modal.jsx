@@ -1,13 +1,19 @@
+import styled from 'styled-components';
 
+const Modal = (male, female, setMale, setFemale ) => {
 
-const modal = () => {
+const onClcikMale = () => {
+  setMale(male=>!male);
+}
+const onClcikFemale = () => {
+  setFemale(female=>!female);
+}
 
 // 팝업 이미지로 복사할 수 있게 띄우기
 
     return (
     <Num>
         <Male onClick={onClcikMale}>
-          <span>신랑측 계좌번호 <img src={icon}/> </span>
           {male ? (
             <div>
             <p>본인 신한 110-257-975501 이현우</p>
@@ -17,7 +23,7 @@ const modal = () => {
           </div>
           ): null}
         </Male>
-        <Female onClick={onClcikFemale} > 신부측 계좌번호
+        <Female onClick={onClcikFemale} > 
         {female ? (
             <div>
             <p>본인 신한 110-463-549357 서진주</p>
@@ -32,4 +38,58 @@ const modal = () => {
         
 }
 
-export default modal;
+export default Modal;
+
+const Num = styled.div`
+position: relative;
+top: 50px;
+`
+const Male = styled.div`
+position: relative;
+top: 150px;
+left: 0;
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+text-align: left;
+p{
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px 0;
+}
+span{
+  display: flex;
+  align-items: center;
+  img{
+  width: 13px;
+  height: 12px;
+  margin-right:10px;
+}
+}
+
+` 
+const Female = styled.div`
+position: relative;
+top: 50px;
+left: 0;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+text-align: left;
+margin-top: 20px;
+p{
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px 0;
+}
+span{
+  display: flex;
+  align-items: center;
+  img{
+  width: 13px;
+  height: 12px;
+  margin-right:10px;
+}
+}
+`

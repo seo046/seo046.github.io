@@ -7,6 +7,7 @@ import mapImg from './map.png'
 import icon from '../src/Img/icon/free-icon-send-3945563.png'
 import secImg from './mainImg.jpg'
 import mainImg from './mg.jpg'
+import Modal from './modal.jsx';
 
 function App() {
 const [male, setMale] = useState(false);
@@ -66,28 +67,10 @@ const settings = {
       </Map>
       <div>마음 전해주실 곳 </div>
       <Num>
-        <Male onClick={onClcikMale}>
-          <span> <img src={icon}/> 신랑측 </span>
-          {male ? (
-            <div>
-            <p>본인 신한 110-257-975501 이현우</p>
-            <p>부 하나 513-910008-36508 이용섭</p>
-            <p>모 대구 249-13-116837 이복성</p>
-            <p>성함 클릭시 계좌번호가 복사 됩니다.</p>
-          </div>
-          ): null}
-        </Male>
-        <Female onClick={onClcikFemale} > 
-        <span> <img src={icon}/> 신부측 </span>
-        {female ? (
-            <div>
-            <p>본인 신한 110-463-549357 서진주</p>
-            <p>부 농협 823-12-139643 서병환</p>
-            <p>모 농협 302-0480-5680-01 정미영</p>
-            <p>성함 클릭시 계좌번호가 복사 됩니다.</p>
-          </div>
-          ): null}
-        </Female>
+      <span onClick={onClcikMale}> <img src={icon}/> 신랑측 </span>
+      {male ? <Modal/>:null}
+      <span onClick={onClcikFemale}> <img src={icon}/> 신부측 </span>
+      {male ? <Modal/>:null}
       </Num>
       </Bottom>
       {/* <Slider {...settings}>
@@ -107,6 +90,7 @@ const settings = {
 }
 
 const Box = styled.div`
+position: absolute;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -179,56 +163,13 @@ img{
   margin-top: 40px;
 }
 `
-
 const Num = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-around;
 margin-bottom: 25px;
 `
-const Male = styled.div`
-margin-top: 20px;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-text-align: left;
-p{
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 5px 0;
-}
-span{
-  display: flex;
-  align-items: center;
-  img{
-  width: 13px;
-  height: 12px;
-  margin-right:10px;
-}
-}
 
-` 
-const Female = styled.div`
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-text-align: left;
-margin-top: 20px;
-p{
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 5px 0;
-}
-span{
-  display: flex;
-  align-items: center;
-  img{
-  width: 13px;
-  height: 12px;
-  margin-right:10px;
-}
-}
-`
 const InnerText = styled.div`
 width: 100px;
 height: 100px;
