@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import img from '../src/img.jpg'
 import mainImg from '../src/mainImg.jpg'
+// import mapImg from '../src/map.png'
 
 function App() {
   return (
@@ -13,11 +14,11 @@ function App() {
         </MainText>
       <InfoBox>
         <Info>
-          <div>ooo, ooo의 아들</div>
-          <div>현우 </div>
+          <div>이용섭•이복성의 아들</div>
+          <div>이현우</div>
         </Info>
         <Info>
-          <div>ooo, ooo의 딸</div>
+          <div>서병환•정미영의 딸</div>
           <div>서진주</div>
         </Info>
       </InfoBox>
@@ -26,18 +27,23 @@ function App() {
         <div>오전 11시</div>
         <div>아현정</div>
       </Data>
-      <Map>예식장 지도</Map>
+      <Map>예식장 지도 이미지 클릭시 
+        {/* <img src={mapImg}/> */}
+      </Map>
       <MapData>
         <p>
           <div>예식장 주소</div>
-          <div>대구광역시 동대구로 194-7 아현정 (황금동 660)</div>
+          <div>대구광역시 수성구 동대구로 194-7 아현정 (황금동 660)</div>
         </p>
         <p>
           <div>주차 안내</div>
-          <div>주차 안내</div>
+          <p>
+          어린이회관 공영주차장 (2시간 무료주차) 대구 수성구 황금동 635-6
+          </p>
         </p>
       </MapData>
       <Num>계좌</Num>
+      <Img src={mainImg}/>
       <Img src={mainImg}/>
     </Box>
   );
