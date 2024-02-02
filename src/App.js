@@ -3,7 +3,10 @@ import { useState } from 'react';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import mapImg from '../src/map.png'
+import mapImg from './map.png'
+import icon from '../src/Img/icon/free-icon-send-3945563.png'
+import secImg from './mainImg.jpg'
+import mainImg from './mg.jpg'
 
 function App() {
 const [male, setMale] = useState(false);
@@ -32,7 +35,7 @@ const settings = {
   return (
     <Box>
       <Top>
-        <MainImg/>
+        <MainImg src={mainImg}/>
         <MainText>현우 진주 우리 결혼합니다.</MainText>
         <InfoBox>
           <Info>
@@ -63,7 +66,8 @@ const settings = {
       </Map>
       <div>마음 전해주실 곳 </div>
       <Num>
-        <Male onClick={onClcikMale}>신랑측 계좌번호
+        <Male onClick={onClcikMale}>
+          <span> <img src={icon}/> 신랑측 </span>
           {male ? (
             <div>
             <p>본인 신한 110-257-975501 이현우</p>
@@ -73,7 +77,8 @@ const settings = {
           </div>
           ): null}
         </Male>
-        <Female onClick={onClcikFemale} > 신부측 계좌번호
+        <Female onClick={onClcikFemale} > 
+        <span> <img src={icon}/> 신부측 </span>
         {female ? (
             <div>
             <p>본인 신한 110-463-549357 서진주</p>
@@ -96,7 +101,7 @@ const settings = {
         <img src={img}/>
         </InnerText>
       </Slider> */}
-      <Img />
+      <Img  src={secImg}/>
     </Box>
   );
 }
@@ -176,12 +181,10 @@ img{
 `
 
 const Num = styled.div`
-flex-direction: column;
-align-items: flex-start;
-justify-content: flex-start;
-margin-right: auto;
-margin-left: 50px;
-margin-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-bottom: 25px;
 `
 const Male = styled.div`
 margin-top: 20px;
@@ -194,17 +197,36 @@ p{
   align-items: flex-start;
   margin: 5px 0;
 }
+span{
+  display: flex;
+  align-items: center;
+  img{
+  width: 13px;
+  height: 12px;
+  margin-right:10px;
+}
+}
+
 ` 
 const Female = styled.div`
 display: flex;
 flex-direction: column;
 align-items: flex-start;
 text-align: left;
-margin-top: 15px;
+margin-top: 20px;
 p{
   flex-direction: column;
   align-items: flex-start;
   margin: 5px 0;
+}
+span{
+  display: flex;
+  align-items: center;
+  img{
+  width: 13px;
+  height: 12px;
+  margin-right:10px;
+}
 }
 `
 const InnerText = styled.div`
