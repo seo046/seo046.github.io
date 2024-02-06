@@ -44,7 +44,7 @@ const settings = {
   return (
     <Box className='App'>
       <Top>
-        <MainImg src={mainImg}/>
+        <MainImg src={mainImg} loading="lazy"/>
         <MainText>현우 진주 우리 결혼합니다.</MainText>
         <InfoBox>
           <Info>
@@ -115,13 +115,18 @@ font-family: "Nanum Myeongjo", serif;
 `
 const Bottom = styled.div`
   font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 const MainImg = styled.img `
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 
 `
 const Img = styled.img`
+  max-width: 80%;
+  height: auto;
   width: 80%;
   height: 70%;
   margin-top: 50px;
@@ -174,6 +179,7 @@ img{
 }
 `
 const Num = styled.div`
+max-width: 100%;
 display: flex;
 align-items: center;
 justify-content: space-around;
@@ -182,6 +188,7 @@ margin-bottom: 25px;
 span{
   display: flex;
   align-items: center;
+  margin-right: 20px;
   img{
   width: 13px;
   height: 12px;

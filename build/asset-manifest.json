@@ -1,10 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.c0c1ae41.css",
-    "main.js": "/static/js/main.1988a6b0.js",
+    "main.js": "/static/js/main.e57af809.js",
     "static/js/787.67d6382a.chunk.js": "/static/js/787.67d6382a.chunk.js",
+    "static/media/gif.GIF": "/static/media/gif.cfb9a21432aa2c0c0e3d.GIF",
     "static/media/mg.jpg": "/static/media/mg.81bed985af729733d2cf.jpg",
     "static/media/mainImg.jpg": "/static/media/mainImg.bf8e57f9345bad8fc7f9.jpg",
+    "static/media/01.webp": "/static/media/01.20be47450fae3e2943fc.webp",
+    "static/media/mainIMg.webp": "/static/media/mainIMg.0a27e6d8e3b80eef5fad.webp",
+    "static/media/02.webp": "/static/media/02.6ab96cd933fee84bfae0.webp",
+    "static/media/secImg.webp": "/static/media/secImg.c6b9f9fe30b554dd92c3.webp",
+    "static/media/03.webp": "/static/media/03.f60bf93ed71e9a11902f.webp",
     "static/media/map.png": "/static/media/map.f8ee420c5bc4cd49baaa.png",
     "static/media/free-icon-send-3945563.png": "/static/media/free-icon-send-3945563.c4eb0d560390d542f704.png",
     "static/media/free-icon-phone-94915.png": "/static/media/free-icon-phone-94915.9a8aa510f7a994a57b95.png",
@@ -14,11 +20,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.c0c1ae41.css.map": "/static/css/main.c0c1ae41.css.map",
-    "main.1988a6b0.js.map": "/static/js/main.1988a6b0.js.map",
+    "main.e57af809.js.map": "/static/js/main.e57af809.js.map",
     "787.67d6382a.chunk.js.map": "/static/js/787.67d6382a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c0c1ae41.css",
-    "static/js/main.1988a6b0.js"
+    "static/js/main.e57af809.js"
   ]
 }

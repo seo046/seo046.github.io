@@ -22,19 +22,19 @@ const ModalH = ( male ) => {
               <p></p>
               <p>신한 110-257-975501</p>
               <p>이현우</p>
-              <p onClick={()=>handleCopyClipBoard('신한 110-257-975501 이현우')}><img src={icon}/> </p>
+              <p onClick={()=>handleCopyClipBoard('신한 110-257-975501 이현우')}><img src={icon} alt='icon'/></p>
             </Info>
             <Info>
               <p>父</p>
               <p>하나 513-910008-36508</p>
               <p>이용섭</p>
-              <p onClick={()=>handleCopyClipBoard('하나 513-910008-36508 이용섭')}><img src={icon}/> </p>
+              <p onClick={()=>handleCopyClipBoard('하나 513-910008-36508 이용섭')}><img src={icon} alt='icon'/></p>
             </Info>
             <Info>
               <p>母</p>
               <p>대구 249-13-116837</p>
               <p>이복성</p>
-              <p onClick={()=>handleCopyClipBoard('대구 249-13-116837 이복성')}><img src={icon}/> </p>
+              <p onClick={()=>handleCopyClipBoard('대구 249-13-116837 이복성')}><img src={icon} alt='icon'/></p>
             </Info>
         </Data>): null}
       </ModalBox>

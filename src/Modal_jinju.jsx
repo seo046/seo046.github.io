@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import icon from './Img/icon/free-icon-copy-content-60990.png';
-import call from './Img/icon/free-icon-phone-94915.png';
 
 
 const handleCopyClipBoard = async (text) => {
@@ -15,14 +14,6 @@ const handleCopyClipBoard = async (text) => {
 const Modal_Jinju = ( female, setFemale ) => {
 
 
-const onClcik = () => {
-  setFemale(female=>!female);
-}
-
-
-
-// 팝업 이미지로 복사할 수 있게 띄우기
-
     return (
     <ModalBox>
       {female ? (
@@ -31,19 +22,19 @@ const onClcik = () => {
               <p></p>
               <p>신한 110-463-549357</p>
               <p>서진주</p>
-              <p onClick={()=>handleCopyClipBoard('신한 110-463-549357 서진주')}><img src={icon}/> </p>
+              <p onClick={()=>handleCopyClipBoard('신한 110-463-549357 서진주')}><img src={icon} alt='icon'/> </p>
             </Info>
             <Info>
               <p>父</p>
               <p>농협 823-12-139643</p>
               <p>서병환</p>
-              <p onClick={()=>handleCopyClipBoard('농협 823-12-139643 서병환')}><img src={icon}/> </p>
+              <p onClick={()=>handleCopyClipBoard('농협 823-12-139643 서병환')}><img src={icon} alt='icon'/> </p>
             </Info>
             <Info>
               <p>母</p>
               <p>농협 302-0480-5680-01</p>
               <p>정미영</p>
-              <p onClick={()=>handleCopyClipBoard('농협 302-0480-5680-01 정미영')}><img src={icon}/> </p>
+              <p onClick={()=>handleCopyClipBoard('농협 302-0480-5680-01 정미영')}><img src={icon} alt='icon'/> </p>
             </Info>
         </Data>): null}
       </ModalBox>
@@ -91,7 +82,4 @@ p:nth-child(2){
 p:nth-child(3){
   margin-left: auto;
 }
-`
-const Btn = styled.div`
-margin-top: 5px;
 `
