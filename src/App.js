@@ -12,7 +12,7 @@ import sec from './Img/secImg.webp';
 import img1 from './Img/01.webp';
 import img2 from './Img/02.webp';
 import img3 from './Img/03.webp';
-import gif from './Img/gif.webp';
+import gif from './Img/gif.GIF';
 import mainImg from './Img.webp';
 
 function App() {
