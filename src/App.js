@@ -15,7 +15,7 @@ import s02 from './Img/s02.jpg';
 import s03 from './Img/s03.jpg';
 import s04 from './Img/s04.jpg';
 import s05 from './Img/s05.jpg';
-
+import mainvideo from './Img/viedo.mp4';
 
 
 function App() {
@@ -105,7 +105,10 @@ const settings = {
         </div>
       </Slider>
       </ImgSlider>
-      <Img  src={gif}/>
+      {/* <Img  src={gif}/> */}
+      <video width='360' height='280' controls="controls">
+        <source src={mainvideo} type="video/mp4"/>
+      </video>
     </Box>
   );
 }
