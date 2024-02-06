@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'BookkMyungjo-Bd'
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -9,45 +12,7 @@ code {
     monospace;
 }
 
-@font-face {
-  font-family: "Nanum Myeongjo";
-  font-weight: 700;
-  src: url("./fonts/NanumMyeongjoBold.ttf") format("truetype");
-  }
-  
-  /* 로보토 */
-  @font-face {
-  font-family: "Roboto Regular";
-  font-weight: 400;
-  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
-  }
-  
-  @font-face {
-  font-family: "Roboto Medium";
-  font-weight: 500;
-  src: url("./fonts/Roboto-Medium.ttf") format("opentype");
-  }
-  
-  @font-face {
-  font-family: "Roboto Bold";
-  font-weight: 700;
-  src: url("./fonts/Roboto-Bold.ttf") format("opentype");
-  }
-  
-  /*나눔스퀘어*/
-  @font-face {
-  font-family: "NanumSquare";
-  src: url("./fonts/Roboto-Regular.ttf") format("opentype");
-  }
 
-  @font-face {
-    font-family: 'BookkMyungjo-Bd';
-    font-weight: 700;
-    src: url("./fonts/BookkMyungjo-Bd.ttf") format('opentype');
-  }
+
+
   
-  
-  @font-face {
-  font-family: "BookkMyungjo";
-  src: url("./fonts/BookkMyungjo.ttf") format('opentype');
-  }

@@ -26,7 +26,7 @@ const onClcikFemale = () => {
 }
 
 const settings = {
-  dots: true,
+  dots: false,
   infinite: true,
   fade: true,
   speed: 1000,
@@ -80,6 +80,7 @@ const settings = {
       {male ? <ModalMale setMale={setMale} male={male} />:null}
       {female ? <Modal setFemale={setFemale} female={female} />:null}
       </Bottom>
+      <Img  src={gif}/>
       <ImgSlider>
       <Slider {...settings}>
         <div>
@@ -93,7 +94,7 @@ const settings = {
         </div>
       </Slider>
       </ImgSlider>
-      <Img  src={gif}/>
+      
     </Box>
   );
 }
@@ -107,17 +108,15 @@ justify-content: center;
 text-align: center;
 max-width: 100%;
 height: auto;
-font-family: 'BookkMyungjo-Bd';
 color: #311D00;
+font-family: 'BookkMyungjo-Bd';
 .infoBox{
   max-width: 90%;
 }
 `
 const Top = styled.div`
-  font-family: 'BookkMyungjo-Bd';
 `
 const Bottom = styled.div`
-  font-family: 'BookkMyungjo-Bd';
   display: flex;
   flex-direction: column;
   align-items: center;
