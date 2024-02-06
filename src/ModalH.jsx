@@ -15,7 +15,7 @@ const ModalH = ( male ) => {
 
 
     return (
-    <ModalBox>
+    <ModalBox className='infoBox'>
       {male ? (
         <Data> 
             <Info>

@@ -11,11 +11,11 @@ const handleCopyClipBoard = async (text) => {
 	}
 };
 
-const Modal_Jinju = ( female, setFemale ) => {
+const Modal_Jinju = ( female ) => {
 
 
     return (
-    <ModalBox>
+    <ModalBox className='infoBox'> 
       {female ? (
         <Data> 
             <Info>

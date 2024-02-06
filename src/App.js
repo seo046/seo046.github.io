@@ -67,7 +67,7 @@ const settings = {
         <p style={{fontSize:'12px', color:'gray'}}>이미지 클릭시 네이버 지도로 연결됩니다.</p>
         <p className='box'>
           <p>예식장 주소</p>
-          <div>대구광역시 수성구 동대구로 194-7 <b>아현정</b> (황금동 660)</div>
+          <p>대구광역시 수성구 동대구로 194-7 <b>아현정</b> (황금동 660)</p>
           <p>주차안내</p>
           <p>어린이회관 공영주차장 (2시간 무료주차) <br/>대구 수성구 황금동 635-6</p>
         </p>
@@ -99,18 +99,22 @@ const settings = {
 }
 
 const Box = styled.div`
+margin: 0;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
-width: 100%;
-height: 100%;
-font-family: "Nanum Myeongjo";
+max-width: 100%;
+height: auto;
+font-family: "Noto Sans KR", sans-serif;
 color: #311D00;
+.infoBox{
+  max-width: 90%;
+}
 `
 const Top = styled.div`
-font-family: "Nanum Myeongjo", serif;
+font-family: "Nanum Myeongjo";
 `
 const Bottom = styled.div`
   font-family: "Noto Sans KR", sans-serif;
