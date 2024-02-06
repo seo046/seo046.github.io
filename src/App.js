@@ -47,11 +47,11 @@ const settings = {
         <MainText>현우 진주 우리 결혼합니다.</MainText>
         <InfoBox>
           <Info>
-            <div>이용섭•이복성의 아들</div>
+            <div>이용섭 • 이복성의 아들</div>
             <div style={{fontWeight:'bold'}}>이현우</div>
           </Info>
           <Info>
-            <div>서병환•정미영의 딸</div>
+            <div>서병환 • 정미영의 딸</div>
             <div style={{fontWeight:'bold'}}>서진주</div>
           </Info>
         </InfoBox>
@@ -107,17 +107,17 @@ justify-content: center;
 text-align: center;
 max-width: 100%;
 height: auto;
-font-family: "Noto Sans KR", sans-serif;
+font-family: 'BookkMyungjo-Bd';
 color: #311D00;
 .infoBox{
   max-width: 90%;
 }
 `
 const Top = styled.div`
-font-family: "Nanum Myeongjo";
+  font-family: 'BookkMyungjo-Bd';
 `
 const Bottom = styled.div`
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'BookkMyungjo-Bd';
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,6 +162,7 @@ div{
 `
 
 const Data = styled.div`
+margin-top: 70px;
 div{
   margin: 10px;
 }
@@ -173,12 +174,16 @@ margin-top: 30px;
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-bottom: 15px;
+:nth-child(3){
+  margin-top: 35px;
+}
 img{
   width: 80%;
   height: 80%;
 }
 .box{
-  margin-top: 40px;
+  margin-top: 20px;
 }
 `
 const Num = styled.div`

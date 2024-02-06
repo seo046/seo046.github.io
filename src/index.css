@@ -25,29 +25,29 @@ code {
   @font-face {
   font-family: "Roboto Medium";
   font-weight: 500;
-  src: url("./fonts/Roboto-Medium.ttf") format("truetype");
+  src: url("./fonts/Roboto-Medium.ttf") format("opentype");
   }
   
   @font-face {
   font-family: "Roboto Bold";
   font-weight: 700;
-  src: url("./fonts/Roboto-Bold.ttf") format("truetype");
+  src: url("./fonts/Roboto-Bold.ttf") format("opentype");
   }
   
   /*나눔스퀘어*/
   @font-face {
   font-family: "NanumSquare";
-  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("./fonts/Roboto-Regular.ttf") format("opentype");
   }
 
   @font-face {
     font-family: 'BookkMyungjo-Bd';
-    src: url("./fonts/BookkMyungjo-Bd.ttf") format('woff2');
     font-weight: 700;
+    src: url("./fonts/BookkMyungjo-Bd.ttf") format('opentype');
   }
   
   
   @font-face {
   font-family: "BookkMyungjo";
-  src: url("./fonts/BookkMyungjo.ttf") format('woff2');
+  src: url("./fonts/BookkMyungjo.ttf") format('opentype');
   }
