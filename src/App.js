@@ -5,8 +5,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import mapImg from './map.png'
 import icon from '../src/Img/icon/free-icon-send-3945563.png'
-import secImg from './mainImg.jpg'
-import mainImg from './mg.jpg'
 import Modal from './Modal_jinju.jsx';
 import ModalMale from './ModalH.jsx'
 import main from './Img/mainIMg.webp';
@@ -14,7 +12,8 @@ import sec from './Img/secImg.webp';
 import img1 from './Img/01.webp';
 import img2 from './Img/02.webp';
 import img3 from './Img/03.webp';
-import gif from './Img/gif.GIF';
+import gif from './Img/gif.webp';
+import mainImg from './Img.webp';
 
 function App() {
 const [male, setMale] = useState(false);
@@ -84,13 +83,13 @@ const settings = {
       <ImgSlider>
       <Slider {...settings}>
         <div>
-        <img src={secImg}/>
+        <img src={sec}/>
         </div>
         <div>
         <img src={img1}/>
         </div>
         <div>
-        <img src={img2}/>
+        <img src={img3}/>
         </div>
       </Slider>
       </ImgSlider>
