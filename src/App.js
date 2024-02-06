@@ -3,17 +3,20 @@ import { useState } from 'react';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import mapImg from './map.png'
+import mapImg from './Img/map.png';
 import icon from '../src/Img/icon/free-icon-send-3945563.png'
 import Modal from './Modal_jinju.jsx';
 import ModalMale from './ModalH.jsx'
-import main from './Img/mainIMg.webp';
-import sec from './Img/secImg.webp';
-import img1 from './Img/01.webp';
-import img2 from './Img/02.webp';
-import img3 from './Img/03.webp';
 import gif from './Img/gif.GIF';
-import mainImg from './Img.webp';
+import imgcenter from './Img/img_center.jpg';
+import imgmain from './Img/img_main.jpg';
+import s01 from './Img/s01.jpg';
+import s02 from './Img/s02.jpg';
+import s03 from './Img/s03.jpg';
+import s04 from './Img/s04.jpg';
+import s05 from './Img/s05.jpg';
+
+
 
 function App() {
 const [male, setMale] = useState(false);
@@ -26,11 +29,11 @@ const onClcikFemale = () => {
 }
 
 const settings = {
-  dots: false,
+  dots: true,
   infinite: true,
   fade: true,
   speed: 1000,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 5000,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -43,7 +46,7 @@ const settings = {
   return (
     <Box className='App'>
       <Top>
-        <MainImg src={mainImg} loading="lazy"/>
+        <MainImg src={imgcenter} loading="lazy"/>
         <MainText>현우 진주 우리 결혼합니다.</MainText>
         <InfoBox>
           <Info>
@@ -80,26 +83,35 @@ const settings = {
       {male ? <ModalMale setMale={setMale} male={male} />:null}
       {female ? <Modal setFemale={setFemale} female={female} />:null}
       </Bottom>
-      <Img  src={gif}/>
       <ImgSlider>
       <Slider {...settings}>
-        <div>
-        <img src={sec}/>
+      <div>
+        <img src={imgmain}/>
         </div>
         <div>
-        <img src={img1}/>
+        <img src={s01}/>
         </div>
         <div>
-        <img src={img3}/>
+        <img src={s02}/>
+        </div>
+        <div>
+        <img src={s03}/>
+        </div>
+        <div>
+        <img src={s04}/>
+        </div>
+        <div>
+        <img src={s05}/>
         </div>
       </Slider>
       </ImgSlider>
-      
+      <Img  src={gif}/>
     </Box>
   );
 }
 
 const Box = styled.div`
+font-family: 'BookkMyungjo-Bd';
 margin: 0;
 display: flex;
 flex-direction: column;
@@ -114,7 +126,7 @@ color: #311D00;
 }
 `
 const Top = styled.div`
-
+font-family: 'BookkMyungjo-Bd';
 `
 const Bottom = styled.div`
 font-family: 'Roboto';
@@ -132,7 +144,7 @@ const Img = styled.img`
   height: auto;
   width: 80%;
   height: 70%;
-  margin-top: 50px;
+  margin-top: 65px;
   margin-bottom: 50px;
 `
 
