@@ -109,14 +109,15 @@ text-align: center;
 max-width: 100%;
 height: auto;
 color: #311D00;
-font-family: 'BookkMyungjo-Bd';
 .infoBox{
   max-width: 90%;
 }
 `
 const Top = styled.div`
+
 `
 const Bottom = styled.div`
+font-family: 'Roboto';
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,10 +1,19 @@
+import { createGlobalStyle } from 'styled-components';
+import nanumMyeongjo from '../public/fonts/NanumMyeongjoBold.ttf';
+import BookkMyungjoBd from '../public/fonts/BookkMyungjo-Bd.woff';
+
+
+
+
+
+const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: "Nanum Myeongjo";
   font-weight: 700;
-  src: url("./fonts/NanumMyeongjoBold.ttf") format("truetype");
+  src: url(${nanumMyeongjo})  format("truetype");
   }
   
-  /* 로보토 */
+/* 
   @font-face {
   font-family: "Roboto Regular";
   font-weight: 400;
@@ -23,15 +32,19 @@
   src: url("./fonts/Roboto-Bold.ttf") format("truetype");
   }
   
-  /*나눔스퀘어*/
+
   @font-face {
   font-family: "NanumSquare";
   src: url("./fonts/Roboto-Regular.ttf") format("truetype");
-  }
+  } */
 
   @font-face {
     font-family: 'BookkMyungjo-Bd';
-    src: url("../public/fonts/BookkMyungjo-Bd.woff") format('woff');
+    src: url(${BookkMyungjoBd}) format('woff');
     font-weight: 700;
     font-style: normal;
   }
+
+`
+
+export default GlobalStyle;
