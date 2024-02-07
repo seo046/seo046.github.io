@@ -15,7 +15,7 @@ import s02 from './Img/s02.jpg';
 import s03 from './Img/s03.jpg';
 import s04 from './Img/s04.jpg';
 import s05 from './Img/s05.jpg';
-import mainvideo from './Img/viedo.mp4';
+import ggg from './C:/Users/gbcko/Desktop/mi/src/video.mp4'
 
 
 function App() {
@@ -105,10 +105,19 @@ const settings = {
         </div>
       </Slider>
       </ImgSlider>
-      {/* <Img  src={gif}/> */}
-      <video width='360' height='280' controls="controls">
-        <source src={mainvideo} type="video/mp4"/>
+      <video 
+        autoPlay
+        loop
+        muted 
+        playsInline
+        width="100%" 
+        height="100%"
+        >
+        <source src={ggg} type="video/mp4" />
       </video>
+      {/* <video width='360' height='280' controls="controls">
+        <source src={require("src/Img/video.mp4")} type="video/mp4"/>
+      </video> */}
     </Box>
   );
 }
