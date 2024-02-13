@@ -135,6 +135,7 @@ const Bottom = styled.div`
   align-items: center;
 `
 const MainImg = styled.img `
+ touch-action: none;
   max-width: 100%;
   height: auto;
 
@@ -192,7 +193,6 @@ margin-bottom: 15px;
   margin-top: 35px;
 }
 img{
-  touch-action: none;
   width: 80%;
   height: 80%;
 }
@@ -221,7 +221,7 @@ span{
 const ImgSlider = styled.div`
 width: 100%;
 height: 250px;
-margin-top: 30px;
+margin-top: 50px;
   .slick-slider {
     height: 100%;
     touch-action: none;
