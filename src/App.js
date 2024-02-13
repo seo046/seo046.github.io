@@ -9,6 +9,7 @@ import icon from '../src/Img/icon/free-icon-send-3945563.png'
 import Modal from './Modal_jinju.jsx';
 import ModalMale from './ModalH.jsx'
 import gif from './Img/gif.GIF';
+import gif2 from './Img/gif2.gif';
 import imgcenter from './Img/img_center.jpg';
 import imgmain from './Img/img_main.jpg';
 import s01 from './Img/s01.jpg';
@@ -84,7 +85,7 @@ const settings = {
       {male ? <ModalMale setMale={setMale} male={male} />:null}
       {female ? <Modal setFemale={setFemale} female={female} />:null}
       </Bottom>
-      <Img className='gif'src={gif}/>
+      <Img className='gif'src={gif2}/>
       <ImgSlider>
       <Slider {...settings}>
       <div>
@@ -141,7 +142,6 @@ const MainImg = styled.img `
 
 `
 const Img = styled.img`
- touch-action: none;
   max-width: 80%;
   height: auto;
   width: 80%;
