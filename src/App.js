@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import './App.css';
 import { useState } from 'react';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
@@ -15,7 +16,7 @@ import s02 from './Img/s02.jpg';
 import s03 from './Img/s03.jpg';
 import s04 from './Img/s04.jpg';
 import s05 from './Img/s05.jpg';
-import ggg from './C:/Users/gbcko/Desktop/mi/src/video.mp4'
+
 
 
 function App() {
@@ -51,7 +52,7 @@ const settings = {
         <InfoBox>
           <Info>
             <div>이용섭 • 이복성의 아들</div>
-            <div style={{fontWeight:'bold'}}>이현우</div>
+            <div style={{fontWeight:'700'}}>이현우</div>
           </Info>
           <Info>
             <div>서병환 • 정미영의 딸</div>
@@ -86,10 +87,10 @@ const settings = {
       <ImgSlider>
       <Slider {...settings}>
       <div>
-        <img src={imgmain}/>
+        <img src={s01}/>
         </div>
         <div>
-        <img src={s01}/>
+        <img src={imgmain}/>
         </div>
         <div>
         <img src={s02}/>
@@ -105,25 +106,12 @@ const settings = {
         </div>
       </Slider>
       </ImgSlider>
-      <video 
-        autoPlay
-        loop
-        muted 
-        playsInline
-        width="100%" 
-        height="100%"
-        >
-        <source src={ggg} type="video/mp4" />
-      </video>
-      {/* <video width='360' height='280' controls="controls">
-        <source src={require("src/Img/video.mp4")} type="video/mp4"/>
-      </video> */}
+      <img className='gif'src={gif}/>
     </Box>
   );
 }
 
 const Box = styled.div`
-font-family: 'BookkMyungjo-Bd';
 margin: 0;
 display: flex;
 flex-direction: column;
@@ -136,12 +124,16 @@ color: #311D00;
 .infoBox{
   max-width: 90%;
 }
+.gif{
+  width: 70%;
+  margin: 55px 0;
+}
 `
 const Top = styled.div`
-font-family: 'BookkMyungjo-Bd';
+  font-family: 'BookkMyungjo';
 `
 const Bottom = styled.div`
-font-family: 'Roboto';
+  font-family: 'nanumMyeongjo';
   display: flex;
   flex-direction: column;
   align-items: center;
