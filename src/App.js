@@ -84,6 +84,7 @@ const settings = {
       {male ? <ModalMale setMale={setMale} male={male} />:null}
       {female ? <Modal setFemale={setFemale} female={female} />:null}
       </Bottom>
+      <Img className='gif'src={gif}/>
       <ImgSlider>
       <Slider {...settings}>
       <div>
@@ -106,7 +107,6 @@ const settings = {
         </div>
       </Slider>
       </ImgSlider>
-      <img className='gif'src={gif}/>
     </Box>
   );
 }
@@ -124,10 +124,6 @@ color: #311D00;
 .infoBox{
   max-width: 90%;
 }
-.gif{
-  width: 70%;
-  margin: 55px 0;
-}
 `
 const Top = styled.div`
   font-family: 'BookkMyungjo';
@@ -144,11 +140,12 @@ const MainImg = styled.img `
 
 `
 const Img = styled.img`
+ touch-action: none;
   max-width: 80%;
   height: auto;
   width: 80%;
   height: 70%;
-  margin-top: 65px;
+  margin-top: 40px;
   margin-bottom: 50px;
 `
 
@@ -195,6 +192,7 @@ margin-bottom: 15px;
   margin-top: 35px;
 }
 img{
+  touch-action: none;
   width: 80%;
   height: 80%;
 }
@@ -222,15 +220,19 @@ span{
 
 const ImgSlider = styled.div`
 width: 100%;
-height: 300px;
+height: 250px;
+margin-top: 30px;
   .slick-slider {
-    touch-action: pinch-zoom;
+    height: 100%;
+    touch-action: none;
+    margin: 0;
   }
   .slick-slide img {
   object-fit: cover;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 0;
 }
 
   .SlickArrow {
@@ -253,6 +255,8 @@ height: 300px;
     text-align: center;
     padding: 0;
     list-style: none;
+    position: relative;
+    bottom: 350px;
     li {
       float: none;
       display: inline-block;
