@@ -85,7 +85,6 @@ const settings = {
       {male ? <ModalMale setMale={setMale} male={male} />:null}
       {female ? <Modal setFemale={setFemale} female={female} />:null}
       </Bottom>
-      <Img className='gif'src={gif2}/>
       <ImgSlider>
       <Slider {...settings}>
       <div>
@@ -108,6 +107,7 @@ const settings = {
         </div>
       </Slider>
       </ImgSlider>
+      <Img className='gif'src={gif2}/>
     </Box>
   );
 }
@@ -146,7 +146,7 @@ const Img = styled.img`
   height: auto;
   width: 80%;
   height: 70%;
-  margin-top: 40px;
+  margin-top: 85px;
   margin-bottom: 50px;
 `
 
@@ -220,7 +220,7 @@ span{
 
 const ImgSlider = styled.div`
 width: 100%;
-height: 250px;
+height: 300px;
 margin-top: 50px;
   .slick-slider {
     height: 100%;
@@ -255,8 +255,6 @@ margin-top: 50px;
     text-align: center;
     padding: 0;
     list-style: none;
-    position: relative;
-    bottom: 350px;
     li {
       float: none;
       display: inline-block;
