@@ -51,7 +51,6 @@ const ModalH = () => {
             <p onClick={()=>handleCopyClipBoard('대구 249-13-116837 이복성')}><img src={icon} alt='icon'/></p>
             </div>
           </Info>
-          {/* <Btn onClick={onClickbtn}>닫기</Btn> */}
         </Data>
         </ModalBox>
         </Box>  ): null}

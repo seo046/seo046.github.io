@@ -26,8 +26,8 @@ const ModalH = () => {
         <Box>
         <ModalBox className='infoBox'>
         <div className='title'>
-        <h4>신랑측 마음 전하실 곳</h4>
-        {/* <img src={close} onClick={onClickbtn}/> */}
+        <h4>신부측 마음 전하실 곳</h4>
+        <img src={close} onClick={onClickbtn}/>
         </div>
         <Data> 
           <Info>
@@ -51,7 +51,6 @@ const ModalH = () => {
             <p onClick={()=>handleCopyClipBoard('농협 302-0480-5680-01 정미영')}><img src={icon} alt='icon'/> </p>
             </div>
           </Info>
-          <Btn onClick={onClickbtn}>닫기</Btn>
         </Data>
         </ModalBox>
         </Box>  ): null}
@@ -82,13 +81,13 @@ width: 300px;
 height: 350px;
 border-radius: 25px;
 margin-bottom: 30px;
-background-color: #fff;
+background-color: #f4f4f3;
 padding: 0 15px;
 z-index: 9999;
 .title{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
   img{

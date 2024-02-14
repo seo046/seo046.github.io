@@ -89,7 +89,7 @@ const settings = {
         <p style={{fontSize:'12px', color:'gray'}}>이미지 클릭시 네이버 지도로 연결됩니다.</p>
         <p className='box'>
           <p>예식장 주소</p>
-          <p>대구광역시 수성구 동대구로 194-7 <b>아현정</b> (황금동 660)</p>
+          <p>대구광역시 수성구 동대구로 194-7 <b>아현정</b> <br/>(황금동 660)</p>
           <p>주차안내</p>
           <p>어린이회관 공영주차장 (2시간 무료주차) <br/>대구 수성구 황금동 635-6</p>
         </p>
@@ -164,7 +164,7 @@ const Img = styled.img`
   width: 80%;
   height: 70%;
   margin-top: 85px;
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 `
 
 const MainText = styled.div`
@@ -240,7 +240,7 @@ span{
 
 const ImgSlider = styled.div`
 width: 100%;
-height: 300px;
+height: 330px;
 margin-top: 150px;
 margin-bottom: 50px;
 
